@@ -77,6 +77,8 @@ p {
 
 .nav__link:hover {
     opacity: 1;
+    transform: scale(1.5);
+    transition: transform .5s linear;
 }
 
 .intro {
@@ -147,7 +149,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin: 95px 0;
-}
+}  
 
 .features__item {
     width: 33.33333%;
@@ -156,6 +158,10 @@ p {
     text-align: center;
 }
 
+.features__item:hover{
+    transform: scale(1.2);
+    transition: transform .5s linear;
+}
 .features__icon {
     margin-bottom: 25px;
 }
@@ -190,6 +196,7 @@ p {
 
 .works__item:hover .works__content {
     opacity: 1;
+    transition: opacity .5s linear;
 }
 
 .works__photo {
@@ -236,15 +243,22 @@ p {
 }
 
 .team__inner {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
+    align-items: center;
 }
 
 .team__item {
     width: 25%;
     padding: 0 15px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+.team__item:hover{
+    transform: scale(1.1);
+    transition: transform .1s linear;
 }
 
 .team__item i{
@@ -260,6 +274,12 @@ p {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+}
+
+.team__photo:hover {
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    transition: transform .5s linear;
 }
 
 .team__name {
