@@ -45,7 +45,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-  
+
+:root{
+    --main-color: white;
+    --transit-transf:  transform .5s linear;
+}
+
 *,
 *:before,
 *:after {
@@ -110,7 +115,7 @@ p {
 
 .nav__link {
     margin-left: 50px;
-    color: #fff;
+    color: var(--main-color);
     text-decoration: none;
     opacity: .75;
     -moz-opacity: .75 ;
@@ -133,11 +138,11 @@ p {
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
     -moz-transform: scale(1.5);
-    transition: transform .5s linear;
-    -o-transition: transform .5s linear;
-    -webkit-transition: transform .5s linear;
-    -ms-transition: transform .5s linear;
-    -moz-transition: transform .5s linear;
+    transition: var(--transit-transf);
+    -o-transition: var(--transit-transf);
+    -webkit-transition: var(--transit-transf);
+    -ms-transition: var(--transit-transf);
+    -moz-transition: var(--transit-transf);
 }
 
 .intro {
@@ -167,7 +172,7 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 65px;
     line-height: 1.1;
-    color: #fff;
+    color: var(--main-color);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -175,7 +180,7 @@ p {
 .intro__subtitle {
     margin-bottom: 60px;
     font-size: 22px;
-    color: #fff;
+    color: var(--main-color);
     line-height: 1.5;
     font-weight: 400;
 }
@@ -191,7 +196,7 @@ p {
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
-    color: #fff;
+    color: var(--main-color);
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
@@ -268,8 +273,8 @@ p {
 .works__item {
     width: 25%;
     height: 350px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
+    border-bottom: 1px solid var(--main-color);
+    border-right: 1px solid var(--main-color);
     position: relative;
     -webkit-sticky: relative;
     overflow: hidden;
@@ -327,13 +332,13 @@ p {
     margin-bottom: 5px;
     font-size: 14px;
     font-weight: 700;
-    color: #fff;
+    color: var(--main-color);
     text-transform: uppercase;
 }
 
 .works__text {
     font-size: 14px;
-    color: #fff;
+    color: var(--main-color);
 }
 
 .team {
@@ -439,7 +444,7 @@ p {
     width: 40px;
     height: 40px;
     margin-right: 4px;
-    background-color: #fff;
+    background-color: var(--main-color);
     border: 1px solid #e8ecee;
     transition: background .1s linear;
     -o-transition: fill .1s linear;
@@ -458,14 +463,14 @@ p {
 .social--footer .social__item {
     background-color: transparent;
     border-width: 2px;
-    border-color: #fff;
+    border-color: var(--main-color);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
 }
 
 .social--footer .social__item:hover {
-    background-color: #fff;
+    background-color: var(--main-color);
 }
 
 .social__icon {
@@ -479,7 +484,7 @@ p {
 }
 
 .social--footer .social__icon {
-    fill: #fff;
+    fill: var(--main-color);
 }
 
 .reviews {
@@ -539,14 +544,14 @@ p {
     font-style: italic;
     font-size: 36px;
     line-height: 1.2;
-    color: #fff;
+    color: var(--main-color);
 }
 
 .reviews__author {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--main-color);
 }
 
 .download {
@@ -587,7 +592,7 @@ p {
 }
 
 .footer__block i{
-    color: white;
+    color: var(--main-color);
 }
 
 .footer__block a{
@@ -602,7 +607,7 @@ p {
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
-    color: #fff;
+    color: var(--main-color);
     text-transform: uppercase;
 }
 
@@ -632,7 +637,7 @@ p {
 }
 
 .copyright__text span {
-    color: #fff;
+    color: var(--main-color);
 }
 
 .burger {
@@ -647,7 +652,7 @@ p {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--main-color);
     font-size: 0;
     color: transparent;
     position: relative;
@@ -658,7 +663,7 @@ p {
 .burger__item:after {
     content: "";
     height: 100%;
-    background-color: #fff;
+    background-color: var(--main-color);
     -webkit-sticky: absolute;
     position: absolute;
     right: 0;
